@@ -9,15 +9,25 @@ VisualStudioを用いたデバッグ方法についてまとめて下さい。
   
   ラインナンバーの左に付けられた赤い丸印をブレイキングポイントという
   
+  [![Image from Gyazo](https://i.gyazo.com/7bf7412fad94bac821345992abad27bc.png)](https://gyazo.com/7bf7412fad94bac821345992abad27bc)
+  
   F5キーを押すか、Debug > Start Debuggingを選択するとデバッグモードに進入(ブレイクポイントへ移動)
+  
+  [![Image from Gyazo](https://i.gyazo.com/87a507e3e5043c79c1c9f671ecb0823e.png)](https://gyazo.com/87a507e3e5043c79c1c9f671ecb0823e)
   
   F11キーを押すことで一行づつ実行することができる
   
   F11キーはコードを一行づつ移動しながら変数の変化を教えてくれる(Step In)
   
+  [![Image from Gyazo](https://i.gyazo.com/c427e3a6aff05a37e01133aafdf72fcb.png)](https://gyazo.com/c427e3a6aff05a37e01133aafdf72fcb)
+  
   F10キーはそのまま一行を飛び越える(Step Over) EX) printf()のようなライブラリ関数がある場合はF10キーを利用
   
+  [![Image from Gyazo](https://i.gyazo.com/81e6be40b045b6d745644c142079b938.png)](https://gyazo.com/81e6be40b045b6d745644c142079b938)
+  
   ライブラリ関数でF10キーを押してしまった場合、EscapeするためにはShift + F11キーでEscape可能 (Step Out)
+  
+  [![Image from Gyazo](https://i.gyazo.com/3c0bf53a3a91438b6079f0f4a259e8af.png)](https://gyazo.com/3c0bf53a3a91438b6079f0f4a259e8af)
   
   ## Step over/in/out
   
@@ -34,6 +44,8 @@ VisualStudioを用いたデバッグ方法についてまとめて下さい。
   ローカル変数ウィンドウではメソッド内限定の変数の内容が自動的に表示される
   
   自動変数ウィンドウでは現在実行中の行に関係のある変数だけが表示される(現在の状況を知ることが用意)
+  
+  [![Image from Gyazo](https://i.gyazo.com/911041b1921bd4cb2c1ddb7c1a4af8b8.png)](https://gyazo.com/911041b1921bd4cb2c1ddb7c1a4af8b8)
   
   ## ウォッチ式
   特定の変数をずっと監視したい場合に役立つ、例えばクラスのメンバ変数を常時監視したいなど、ウォッチウィンドウに追加すると
@@ -57,6 +69,8 @@ VisualStudioを用いたデバッグ方法についてまとめて下さい。
   
   アドレス欄にアドレスを入れたり、ポイント、＆一般変数名などを入力すれば該当アドレスのメモリーを直接確認できる
   
+  [![Image from Gyazo](https://i.gyazo.com/cd07808c7eddd709ae066f9c7b3f33fd.png)](https://gyazo.com/cd07808c7eddd709ae066f9c7b3f33fd)
+  
   ## コールスタック(呼び出し履歴)
   
   コールスタックを使用すると現在呼び出し履歴にある関数の呼び出しやプロシージャ呼び出しを表示できる
@@ -72,6 +86,8 @@ VisualStudioを用いたデバッグ方法についてまとめて下さい。
   イミディエイトウィンドウを表示するには : デバッグ(D) -> ウィンドウ(W) -> イミディエイト(I)　か　Ctrl + Alt + I　もしくは、
   
   Debug.Immediate　と入力することで表示できる
+  
+  [![Image from Gyazo](https://i.gyazo.com/0b187d63b209a7091594803ce5364d79.png)](https://gyazo.com/0b187d63b209a7091594803ce5364d79)
   
 
 
